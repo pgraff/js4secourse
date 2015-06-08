@@ -19,4 +19,8 @@ Object.defineProperty(module.exports, 'learnJson', {
 	}
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, function(err) {
+  if (!err) {
+    console.log("Node is up and running");
+  }
+});
